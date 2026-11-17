@@ -180,6 +180,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\Api\" />
+    <Folder Include="Filters\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
