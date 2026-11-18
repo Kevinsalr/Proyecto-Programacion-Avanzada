@@ -1,12 +1,70 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.data\\entities\\salida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|solutionrelative:ecorutas.data\\entities\\salida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.data\\entities\\resena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|solutionrelative:ecorutas.data\\entities\\resena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.data\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|solutionrelative:ecorutas.data\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Resena.cs",
+              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Entities\\Resena.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Data\\Entities\\Resena.cs",
+              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Entities\\Resena.cs",
+              "RelativeToolTip": "EcoRutas.Data\\Entities\\Resena.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T22:17:10.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Data\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "EcoRutas.Data\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T22:16:39.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Salida.cs",
+              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Entities\\Salida.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Data\\Entities\\Salida.cs",
+              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Entities\\Salida.cs",
+              "RelativeToolTip": "EcoRutas.Data\\Entities\\Salida.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T22:16:05.454Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

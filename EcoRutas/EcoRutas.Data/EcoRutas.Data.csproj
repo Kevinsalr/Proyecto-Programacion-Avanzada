@@ -51,8 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\DetalleReserva.cs" />
+    <Compile Include="Entities\Imagen.cs" />
+    <Compile Include="Entities\Pase.cs" />
+    <Compile Include="Entities\Resena.cs" />
+    <Compile Include="Entities\Reserva.cs" />
     <Compile Include="Entities\Salida.cs" />
     <Compile Include="Entities\Tour.cs" />
+    <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
