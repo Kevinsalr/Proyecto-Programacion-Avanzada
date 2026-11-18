@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using EcoRutas.Web.Models;
+using EcoRutas.Data.Entities;
 
 namespace EcoRutas.Web.Controllers
 {

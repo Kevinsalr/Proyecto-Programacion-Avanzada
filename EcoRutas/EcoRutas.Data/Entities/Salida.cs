@@ -37,7 +37,6 @@ namespace EcoRutas.Data.Entities
 
         public bool Activa { get; set; }
 
-        // true cuando el guía cierra la lista de pasajeros (Avance 3)
         public bool ListaCerrada { get; set; }
 
         [Timestamp]

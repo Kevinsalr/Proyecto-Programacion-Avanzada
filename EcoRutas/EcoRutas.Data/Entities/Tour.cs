@@ -48,4 +48,4 @@ namespace EcoRutas.Data.Entities
         public virtual ICollection<Salida> Salidas { get; set; } = new HashSet<Salida>();
         public virtual ICollection<Resena> Resenas { get; set; } = new HashSet<Resena>();
     }
-}
+}         

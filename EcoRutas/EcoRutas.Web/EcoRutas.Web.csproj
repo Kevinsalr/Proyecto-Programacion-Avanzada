@@ -164,7 +164,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -251,6 +250,16 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EcoRutas.Data\EcoRutas.Data.csproj">
+      <Project>{d4409365-73e0-469d-a2ec-fa64638119be}</Project>
+      <Name>EcoRutas.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EcoRutas.Service\EcoRutas.Service.csproj">
+      <Project>{1f146557-7286-435d-a844-9eec24f8cb83}</Project>
+      <Name>EcoRutas.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

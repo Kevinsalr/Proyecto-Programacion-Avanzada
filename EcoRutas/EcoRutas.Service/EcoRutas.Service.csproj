@@ -63,6 +63,16 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EcoRutas.Data\EcoRutas.Data.csproj">
+      <Project>{d4409365-73e0-469d-a2ec-fa64638119be}</Project>
+      <Name>EcoRutas.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EcoRutas.Repository\EcoRutas.Repository.csproj">
+      <Project>{a58a25cf-9de6-449e-aabd-e33f51e51ebc}</Project>
+      <Name>EcoRutas.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

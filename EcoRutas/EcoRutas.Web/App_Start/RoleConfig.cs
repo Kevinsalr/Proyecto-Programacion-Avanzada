@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using EcoRutas.Web.Models;
+using EcoRutas.Data.Context;
 
 namespace EcoRutas.Web.App_Start
 {
@@ -9,7 +10,7 @@ namespace EcoRutas.Web.App_Start
     {
         public static void CrearRoles()
         {
-            using (var context = new ApplicationDbContext())
+            using (var context = new EcoRutasContext())
             {
                 var roleManager = new RoleManager<IdentityRole>(
                     new RoleStore<IdentityRole>(context));

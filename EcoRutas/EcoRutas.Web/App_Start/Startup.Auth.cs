@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
+using EcoRutas.Data.Context;
 
 [assembly: OwinStartup(typeof(EcoRutas.Web.Startup))]
 
@@ -18,7 +19,7 @@ namespace EcoRutas.Web
 
         public void ConfigureAuth(IAppBuilder app)
         {
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext(EcoRutasContext.Create);
 
             app.CreatePerOwinContext<ApplicationUserManager>(
                 ApplicationUserManager.Create);

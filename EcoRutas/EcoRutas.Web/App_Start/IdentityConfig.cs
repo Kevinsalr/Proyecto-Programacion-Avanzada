@@ -2,8 +2,8 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-
-using EcoRutas.Web.Models;
+using EcoRutas.Data.Context;
+using EcoRutas.Data.Entities;
 
 namespace EcoRutas.Web
 {
@@ -20,7 +20,7 @@ namespace EcoRutas.Web
         {
             var manager = new ApplicationUserManager(
                 new UserStore<ApplicationUser>(
-                    context.Get<ApplicationDbContext>()));
+                       context.Get<EcoRutasContext>()));
 
             // Configuración del correo electrónico.
             manager.UserValidator = new UserValidator<ApplicationUser>(manager)

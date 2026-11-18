@@ -30,7 +30,6 @@ namespace EcoRutas.Data.Entities
 
         public bool Asistio { get; set; }
 
-        // true cuando el detalle se cancela (el pase queda anulado, no se borra)
         public bool Anulado { get; set; }
 
         public virtual DetalleReserva DetalleReserva { get; set; }
