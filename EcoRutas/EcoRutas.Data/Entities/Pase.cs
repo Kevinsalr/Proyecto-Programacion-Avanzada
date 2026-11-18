@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace EcoRutas.Data.Entities
 
         [Required]
         [StringLength(40)]
+        [Index("IX_Pase_Codigo", IsUnique = true)]
         public string Codigo { get; set; }
 
         [Required]
@@ -27,6 +29,9 @@ namespace EcoRutas.Data.Entities
         public string IdentificacionPasajero { get; set; }
 
         public bool Asistio { get; set; }
+
+        // true cuando el detalle se cancela (el pase queda anulado, no se borra)
+        public bool Anulado { get; set; }
 
         public virtual DetalleReserva DetalleReserva { get; set; }
     }

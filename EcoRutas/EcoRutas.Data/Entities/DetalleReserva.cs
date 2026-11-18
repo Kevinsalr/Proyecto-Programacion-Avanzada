@@ -15,18 +15,16 @@ namespace EcoRutas.Data.Entities
 
         public int SalidaId { get; set; }
 
+        [Range(1, 6)]
         [Display(Name = "Cantidad de pasajeros")]
         public int CantidadPasajeros { get; set; }
 
-     
         [Display(Name = "Precio por persona")]
         [Range(typeof(decimal), "0.01", "9999999")]
         public decimal PrecioXPersona { get; set; }
 
-        
-        [Required]
         [Display(Name = "Estado")]
-        public string Estado { get; set; } 
+        public EstadoDetalle Estado { get; set; } = EstadoDetalle.Confirmada;
 
         [Display(Name = "Fecha de cancelación")]
         public DateTime? FechaCancelacion { get; set; }
