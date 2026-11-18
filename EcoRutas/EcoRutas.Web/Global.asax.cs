@@ -1,10 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using EcoRutas.Web.App_Start;
 
 namespace EcoRutas.Web
 {
@@ -13,9 +12,18 @@ namespace EcoRutas.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            FilterConfig.RegisterGlobalFilters(
+                GlobalFilters.Filters);
+
+            RouteConfig.RegisterRoutes(
+                RouteTable.Routes);
+
+            BundleConfig.RegisterBundles(
+                BundleTable.Bundles);
+
+            // Crear los roles iniciales del sistema.
+            RoleConfig.CrearRoles();
         }
     }
 }
