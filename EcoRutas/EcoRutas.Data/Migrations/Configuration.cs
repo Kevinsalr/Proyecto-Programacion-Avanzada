@@ -3,6 +3,7 @@
     using System.Data.Entity.Migrations;
     using EcoRutas.Data.Context;
     using EcoRutas.Data.Entities;
+    using EcoRutas.Data.Seed;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -28,6 +29,9 @@
             CrearUsuario(userManager, "USR-GUIA01", "Carlos Guía Rojas", "guia1@ecorutas.com", "Guia123!", "Guia");
             CrearUsuario(userManager, "USR-GUIA02", "María Guía Vargas", "guia2@ecorutas.com", "Guia123!", "Guia");
             CrearUsuario(userManager, "USR-ASOC01", "Ana Asociada Mora", "asociado@ecorutas.com", "Asociado123!", "Asociado");
+
+            // Tours con imágenes y salidas pasadas, del día y futuras.
+            CatalogoSeed.Sembrar(context);
         }
 
         private static void CrearUsuario(UserManager<ApplicationUser> manager, string codigo,
