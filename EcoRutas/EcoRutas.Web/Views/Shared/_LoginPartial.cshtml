@@ -1,0 +1,16 @@
+﻿@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm", @class = "d-flex align-items-center" }))
+    {
+        @Html.AntiForgeryToken()
+        <span class="navbar-text me-3">Hola, @User.Identity.Name</span>
+        <button type="submit" class="btn btn-outline-light btn-sm">Cerrar sesión</button>
+    }
+}
+else
+{
+    <div class="d-flex">
+        @Html.ActionLink("Registrarse", "Register", "Account", null, new { @class = "btn btn-outline-light btn-sm me-2" })
+        @Html.ActionLink("Iniciar sesión", "Login", "Account", null, new { @class = "btn btn-success btn-sm" })
+    </div>
+}

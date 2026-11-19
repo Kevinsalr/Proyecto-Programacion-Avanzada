@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using EcoRutas.Web.Models;
 using EcoRutas.Data.Entities;
+using System;
 
 namespace EcoRutas.Web.Controllers
 {
@@ -52,9 +53,11 @@ namespace EcoRutas.Web.Controllers
             {
                 var user = new ApplicationUser
                 {
+                    CodigoUsuario = "USR-" + Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper(),
                     NombreCompleto = model.NombreCompleto,
                     UserName = model.Email,
-                    Email = model.Email
+                    Email = model.Email,
+                    Activo = true
                 };
 
                 var result = await UserManager.CreateAsync(
@@ -63,7 +66,7 @@ namespace EcoRutas.Web.Controllers
                 if (result.Succeeded)
                 {
                     var roleResult = await UserManager.AddToRoleAsync(
-                        user.Id, "Usuario");
+                        user.Id, "Asociado");
 
                     if (!roleResult.Succeeded)
                     {
@@ -107,6 +110,18 @@ namespace EcoRutas.Web.Controllers
 
             if (user != null)
             {
+                if (!user.Activo)
+                {
+                    ModelState.AddModelError(
+                        "",
+                        "Su cuenta está inactiva. Comuníquese con un administrador.");
+
+                    return View(model);
+                }
+
+                user.UltimaConexion = DateTime.Now;
+                await UserManager.UpdateAsync(user);
+
                 await SignInAsync(user, model.RememberMe);
 
                 if (Url.IsLocalUrl(returnUrl))

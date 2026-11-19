@@ -1,0 +1,48 @@
+﻿@model EcoRutas.Web.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Crear cuenta";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-5">
+        <h2 class="mb-3">Crear cuenta</h2>
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="mb-3">
+                @Html.LabelFor(m => m.NombreCompleto, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.NombreCompleto, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.NombreCompleto, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="mb-3">
+                @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", type = "email" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="mb-3">
+                @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                <div class="form-text">Mínimo 8 caracteres, con mayúscula, minúscula, número y un símbolo.</div>
+            </div>
+
+            <div class="mb-3">
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "form-label" })
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+            </div>
+
+            <button type="submit" class="btn btn-success">Registrarme</button>
+            @Html.ActionLink("Ya tengo cuenta", "Login", null, new { @class = "btn btn-link" })
+        }
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

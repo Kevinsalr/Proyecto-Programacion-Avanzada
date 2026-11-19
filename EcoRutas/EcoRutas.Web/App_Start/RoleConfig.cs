@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using EcoRutas.Web.Models;
 using EcoRutas.Data.Context;
 
 namespace EcoRutas.Web.App_Start
@@ -17,8 +16,9 @@ namespace EcoRutas.Web.App_Start
 
                 string[] roles =
                 {
-                    "Usuario",
-                    "Administrador"
+                    "Administrador",
+                    "Asociado",
+                    "Guia"
                 };
 
                 foreach (string nombreRol in roles)
