@@ -1,0 +1,128 @@
+﻿@model EcoRutas.Web.Models.TourIndexViewModel
+@{
+    ViewBag.Title = "Tours";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Tours</h2>
+    @Html.ActionLink("Nuevo tour", "Create", null, new { @class = "btn btn-success" })
+</div>
+
+@using (Html.BeginForm("Index", "Tours", FormMethod.Get, new { @class = "row g-2 mb-3" }))
+{
+    <div class="col-md-6">
+        @Html.TextBoxFor(m => m.Busqueda, new { @class = "form-control", placeholder = "Buscar por nombre, código o categoría" })
+    </div>
+    <div class="col-md-3">
+        <select name="estado" class="form-select">
+            <option value="" @(string.IsNullOrEmpty(Model.Estado) ? "selected" : "")>Todos</option>
+            <option value="activos" @(Model.Estado == "activos" ? "selected" : "")>Activos</option>
+            <option value="inactivos" @(Model.Estado == "inactivos" ? "selected" : "")>Inactivos</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <button type="submit" class="btn btn-outline-dark">Filtrar</button>
+        @Html.ActionLink("Limpiar", "Index", null, new { @class = "btn btn-link" })
+    </div>
+}
+
+@if (!Model.Tours.Any())
+{
+    <div class="alert alert-info">No hay tours que coincidan. Cree el primero con el botón <strong>Nuevo tour</strong>.</div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Dificultad</th>
+                    <th class="text-center">Imágenes</th>
+                    <th class="text-center">Salidas</th>
+                    <th>Estado</th>
+                    <th class="text-end">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model.Tours)
+                {
+                    <tr>
+                        <td>@t.Codigo</td>
+                        <td>@t.Nombre</td>
+                        <td>@t.Categoria</td>
+                        <td>@t.Dificultad</td>
+                        <td class="text-center">
+                            <span class="badge @(t.CantidadImagenes >= 3 ? "bg-secondary" : "bg-warning text-dark")">@t.CantidadImagenes</span>
+                        </td>
+                        <td class="text-center">@t.CantidadSalidas</td>
+                        <td>
+                            @if (t.Activo)
+                            {
+                                <span class="badge bg-success">Activo</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Inactivo</span>
+                            }
+                        </td>
+                        <td class="text-end text-nowrap">
+                            @Html.ActionLink("Ver", "Details", new { id = t.Id }, new { @class = "btn btn-sm btn-outline-primary" })
+                            @Html.ActionLink("Editar", "Edit", new { id = t.Id }, new { @class = "btn btn-sm btn-outline-secondary" })
+
+                            @using (Html.BeginForm("CambiarEstado", "Tours", FormMethod.Post, new { @class = "d-inline" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@t.Id" />
+                                <input type="hidden" name="activo" value="@((!t.Activo).ToString().ToLower())" />
+                                <button type="submit" class="btn btn-sm btn-outline-warning">@(t.Activo ? "Inactivar" : "Activar")</button>
+                            }
+
+                            <button type="button" class="btn btn-sm btn-outline-danger btn-eliminar"
+                                    data-bs-toggle="modal" data-bs-target="#modalEliminar"
+                                    data-id="@t.Id" data-nombre="@t.Nombre">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+<!-- Modal de confirmación para eliminar -->
+<div class="modal fade" id="modalEliminar" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Eliminar", "Tours", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="id" id="eliminarId" />
+                <div class="modal-header">
+                    <h5 class="modal-title">Eliminar tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro que desea eliminar el tour <strong id="eliminarNombre"></strong>?
+                    Solo se puede eliminar si no tiene salidas ni reseñas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(".btn-eliminar").on("click", function () {
+            $("#eliminarId").val($(this).data("id"));
+            $("#eliminarNombre").text($(this).data("nombre"));
+        });
+    </script>
+}

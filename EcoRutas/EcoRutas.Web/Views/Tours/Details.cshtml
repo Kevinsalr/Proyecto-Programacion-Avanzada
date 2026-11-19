@@ -1,0 +1,78 @@
+﻿@model EcoRutas.Service.DTOs.TourDetalleDto
+@{
+    ViewBag.Title = Model.Nombre;
+}
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <h2 class="mb-1">@Model.Nombre</h2>
+        <span class="text-muted">@Model.Codigo</span>
+        @if (Model.Activo)
+        {
+            <span class="badge bg-success ms-2">Activo</span>
+        }
+        else
+        {
+            <span class="badge bg-secondary ms-2">Inactivo</span>
+        }
+    </div>
+    <div>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-outline-secondary" })
+        @Html.ActionLink("Volver a la lista", "Index", null, new { @class = "btn btn-link" })
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-8">
+        <p>@Model.Descripcion</p>
+    </div>
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Categoría:</strong> @Model.Categoria</li>
+            <li class="list-group-item"><strong>Dificultad:</strong> @Model.Dificultad</li>
+            <li class="list-group-item"><strong>Duración:</strong> @Model.DuracionMinutos minutos</li>
+            <li class="list-group-item"><strong>Punto de encuentro:</strong> @Model.PuntoEncuentro</li>
+        </ul>
+    </div>
+</div>
+
+<h4>Imágenes (@Model.Imagenes.Count)</h4>
+@if (Model.Imagenes.Count < 3)
+{
+    <div class="alert alert-warning">Este tour tiene menos de 3 imágenes. Agregue más para poder activarlo.</div>
+}
+
+<div class="row g-3 mb-3">
+    @foreach (var img in Model.Imagenes)
+    {
+        <div class="col-6 col-md-3">
+            <div class="card h-100">
+                <img src="@Url.Action("Imagen", "Tours", new { id = img.Id })" class="card-img-top" alt="@img.NombreArchivo" style="height:160px;object-fit:cover;" />
+                <div class="card-body p-2 d-flex justify-content-between align-items-center">
+                    <small class="text-truncate me-2" title="@img.NombreArchivo">@img.NombreArchivo</small>
+                    @using (Html.BeginForm("EliminarImagen", "Tours", FormMethod.Post, new { onsubmit = "return confirm('¿Eliminar esta imagen?');" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@img.Id" />
+                        <input type="hidden" name="tourId" value="@Model.Id" />
+                        <button type="submit" class="btn btn-sm btn-outline-danger">Quitar</button>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@using (Html.BeginForm("AgregarImagenes", "Tours", FormMethod.Post, new { enctype = "multipart/form-data", @class = "row g-2 mb-5" }))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.Id" />
+    <div class="col-md-8">
+        <input type="file" name="imagenes" class="form-control" accept="image/jpeg,image/png,image/gif,image/webp" multiple required />
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-outline-success">Agregar imágenes</button>
+    </div>
+}
+
+@Html.Partial("_SalidasTour", Model)

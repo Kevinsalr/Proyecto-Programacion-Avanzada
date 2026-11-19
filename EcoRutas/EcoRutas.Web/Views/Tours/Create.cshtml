@@ -1,0 +1,39 @@
+﻿@model EcoRutas.Web.Models.TourFormViewModel
+@{
+    ViewBag.Title = "Nuevo tour";
+}
+
+<h2>Nuevo tour</h2>
+
+@using (Html.BeginForm("Create", "Tours", FormMethod.Post, new { enctype = "multipart/form-data", id = "formTour" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.Partial("_TourCampos", Model)
+
+    <div class="mt-3">
+        <label class="form-label" for="imagenes">Imágenes del tour (mínimo 3, máximo 2 MB cada una)</label>
+        <input type="file" id="imagenes" name="imagenes" class="form-control" accept="image/jpeg,image/png,image/gif,image/webp" multiple />
+        <div id="errorImagenes" class="text-danger"></div>
+    </div>
+
+    <div class="mt-4">
+        <button type="submit" class="btn btn-success">Guardar tour</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-link" })
+    </div>
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $("#formTour").on("submit", function (e) {
+            var archivos = $("#imagenes")[0].files;
+            if (archivos.length < 3) {
+                $("#errorImagenes").text("Debe seleccionar al menos 3 imágenes.");
+                e.preventDefault();
+            } else {
+                $("#errorImagenes").text("");
+            }
+        });
+    </script>
+}

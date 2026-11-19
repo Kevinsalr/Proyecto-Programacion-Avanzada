@@ -1,0 +1,36 @@
+﻿@model EcoRutas.Web.Models.SalidaFormViewModel
+
+@Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+@Html.HiddenFor(m => m.Id)
+@Html.HiddenFor(m => m.TourId)
+@Html.HiddenFor(m => m.VersionFilaBase64)
+
+<div class="row g-3">
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.FechaHora, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.FechaHora, "{0:yyyy-MM-ddTHH:mm}", new { @class = "form-control", type = "datetime-local" })
+        @Html.ValidationMessageFor(m => m.FechaHora, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.GuiaId, new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.GuiaId, Model.Guias, "-- Seleccione un guía --", new { @class = "form-select" })
+        @Html.ValidationMessageFor(m => m.GuiaId, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.PrecioXPersona, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.PrecioXPersona, new { @class = "form-control", type = "number", step = "0.01", min = "0.01" })
+        @Html.ValidationMessageFor(m => m.PrecioXPersona, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-md-6">
+        @Html.LabelFor(m => m.CupoMax, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.CupoMax, new { @class = "form-control", type = "number", min = "1", max = "500" })
+        @Html.ValidationMessageFor(m => m.CupoMax, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            @Html.CheckBoxFor(m => m.Activa, new { @class = "form-check-input" })
+            @Html.LabelFor(m => m.Activa, new { @class = "form-check-label" })
+        </div>
+    </div>
+</div>

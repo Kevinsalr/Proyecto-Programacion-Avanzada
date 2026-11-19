@@ -1,53 +1,141 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\",
+  "WorkspaceRootPath": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\tours\\_salidastour.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\tours\\_salidastour.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\salidas\\_salidacampos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\salidas\\_salidacampos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\salidas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\salidas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\salidas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\salidas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\controllers\\salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\controllers\\salidascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\app_start\\roleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\app_start\\roleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.data\\migrations\\202611182342077_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|solutionrelative:ecorutas.data\\migrations\\202611182342077_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|solutionrelative:ecorutas.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\models\\salidaviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\models\\salidaviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\tours\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\tours\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\tours\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\tours\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\tours\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\tours\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\tours\\_tourcampos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\tours\\_tourcampos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\views\\tours\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\tours\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\controllers\\tourscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\controllers\\tourscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\models\\tourviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\models\\tourviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|solutionrelative:ecorutas.data\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.service\\implementaciones\\servicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|solutionrelative:ecorutas.service\\implementaciones\\servicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.service\\implementaciones\\salidaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|solutionrelative:ecorutas.service\\implementaciones\\salidaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.service\\implementaciones\\tourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|solutionrelative:ecorutas.service\\implementaciones\\tourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.service\\interfaces\\iservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|solutionrelative:ecorutas.service\\interfaces\\iservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.service\\exceptions\\catalogodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|solutionrelative:ecorutas.service\\exceptions\\catalogodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.service\\exceptions\\excepcionesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F146557-7286-435D-A844-9EEC24F8CB83}|EcoRutas.Service\\EcoRutas.Service.csproj|solutionrelative:ecorutas.service\\exceptions\\excepcionesnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A58A25CF-9DE6-449E-AABD-E33F51E51EBC}|EcoRutas.Repository\\EcoRutas.Repository.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.repository\\implementaciones\\repositorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A58A25CF-9DE6-449E-AABD-E33F51E51EBC}|EcoRutas.Repository\\EcoRutas.Repository.csproj|solutionrelative:ecorutas.repository\\implementaciones\\repositorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A58A25CF-9DE6-449E-AABD-E33F51E51EBC}|EcoRutas.Repository\\EcoRutas.Repository.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.repository\\interfaces\\irepositorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A58A25CF-9DE6-449E-AABD-E33F51E51EBC}|EcoRutas.Repository\\EcoRutas.Repository.csproj|solutionrelative:ecorutas.repository\\interfaces\\irepositorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\users\\kevin\\onedrive\\documentos\\github\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\app_start\\roleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\app_start\\roleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.data\\migrations\\202611182342077_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4409365-73E0-469D-A2EC-FA64638119BE}|EcoRutas.Data\\EcoRutas.Data.csproj|solutionrelative:ecorutas.data\\migrations\\202611182342077_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|c:\\proyecto-programacion-avanzada\\ecorutas\\ecorutas.web\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\ecorutas.web\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95EC0424-67F7-46B1-A406-2CB6DBE63AE6}|EcoRutas.Web\\EcoRutas.Web.csproj|solutionrelative:ecorutas.web\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,15 +146,340 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Salidas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Salidas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Salidas\\Edit.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Salidas\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T20:12:44.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Salidas\\Create.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Salidas\\Create.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Salidas\\Create.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Salidas\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T20:12:22.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_SalidaCampos.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Salidas\\_SalidaCampos.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Salidas\\_SalidaCampos.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Salidas\\_SalidaCampos.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Salidas\\_SalidaCampos.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwCMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T20:11:59.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalidasController.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\SalidasController.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Controllers\\SalidasController.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\SalidasController.cs",
+              "RelativeToolTip": "EcoRutas.Web\\Controllers\\SalidasController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAswKYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T20:09:35.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalidaViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Models\\SalidaViewModels.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Models\\SalidaViewModels.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Models\\SalidaViewModels.cs",
+              "RelativeToolTip": "EcoRutas.Web\\Models\\SalidaViewModels.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T20:09:07.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Details.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Tours\\Details.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Details.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Tours\\Details.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwE0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T20:06:03.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_SalidasTour.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\_SalidasTour.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Tours\\_SalidasTour.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\_SalidasTour.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Tours\\_SalidasTour.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T20:05:41.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Create.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Tours\\Create.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Create.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Tours\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T19:59:39.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Tours\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Edit.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Tours\\Edit.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T20:00:02.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_TourCampos.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\_TourCampos.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Tours\\_TourCampos.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\_TourCampos.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Tours\\_TourCampos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T19:58:48.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Index.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Tours\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Tours\\Index.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Tours\\Index.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAiwH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T19:56:58.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Web.config",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Web.config",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Web.config",
+              "RelativeToolTip": "EcoRutas.Web\\Web.config",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwFQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-11-18T23:36:52.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ToursController.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\ToursController.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Controllers\\ToursController.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\ToursController.cs",
+              "RelativeToolTip": "EcoRutas.Web\\Controllers\\ToursController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwPUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:55:23.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TourViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Models\\TourViewModels.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Models\\TourViewModels.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Models\\TourViewModels.cs",
+              "RelativeToolTip": "EcoRutas.Web\\Models\\TourViewModels.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:54:22.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "EcoRutas.Web\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:53:07.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SalidaService.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Implementaciones\\SalidaService.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Service\\Implementaciones\\SalidaService.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Implementaciones\\SalidaService.cs",
+              "RelativeToolTip": "EcoRutas.Service\\Implementaciones\\SalidaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:46:56.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TourService.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Implementaciones\\TourService.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Service\\Implementaciones\\TourService.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Implementaciones\\TourService.cs",
+              "RelativeToolTip": "EcoRutas.Service\\Implementaciones\\TourService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwC4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:46:08.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IServicios.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Interfaces\\IServicios.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Service\\Interfaces\\IServicios.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Interfaces\\IServicios.cs",
+              "RelativeToolTip": "EcoRutas.Service\\Interfaces\\IServicios.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA0wBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:45:48.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CatalogoDtos.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Exceptions\\CatalogoDtos.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Service\\Exceptions\\CatalogoDtos.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Exceptions\\CatalogoDtos.cs",
+              "RelativeToolTip": "EcoRutas.Service\\Exceptions\\CatalogoDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:44:38.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ExcepcionesNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Exceptions\\ExcepcionesNegocio.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Service\\Exceptions\\ExcepcionesNegocio.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Exceptions\\ExcepcionesNegocio.cs",
+              "RelativeToolTip": "EcoRutas.Service\\Exceptions\\ExcepcionesNegocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:43:52.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Repositorios.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Repository\\Implementaciones\\Repositorios.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Repository\\Implementaciones\\Repositorios.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Repository\\Implementaciones\\Repositorios.cs",
+              "RelativeToolTip": "EcoRutas.Repository\\Implementaciones\\Repositorios.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAywJAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:42:49.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwDkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T00:01:44.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ServiceFactory.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Implementaciones\\ServiceFactory.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Service\\Implementaciones\\ServiceFactory.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Service\\Implementaciones\\ServiceFactory.cs",
+              "RelativeToolTip": "EcoRutas.Service\\Implementaciones\\ServiceFactory.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:48:01.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Data\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "EcoRutas.Data\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T23:41:34.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IRepositorios.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Repository\\Interfaces\\IRepositorios.cs",
+              "RelativeDocumentMoniker": "EcoRutas.Repository\\Interfaces\\IRepositorios.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Repository\\Interfaces\\IRepositorios.cs",
+              "RelativeToolTip": "EcoRutas.Repository\\Interfaces\\IRepositorios.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T19:42:00.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "BundleConfig.cs",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "EcoRutas.Web\\App_Start\\BundleConfig.cs",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\BundleConfig.cs",
               "RelativeToolTip": "EcoRutas.Web\\App_Start\\BundleConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -75,146 +488,99 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "EcoRutas.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-19T00:01:44.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
               "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "EcoRutas.Web\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-19T00:01:34.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T00:01:34.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 27,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "EcoRutas.Web\\Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-18T23:59:35.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-18T23:59:35.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 28,
               "Title": "login.cshtml",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\login.cshtml",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\login.cshtml",
               "RelativeDocumentMoniker": "EcoRutas.Web\\Views\\Account\\login.cshtml",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\login.cshtml",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Views\\Account\\login.cshtml",
               "RelativeToolTip": "EcoRutas.Web\\Views\\Account\\login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-18T23:59:09.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-18T23:59:09.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 31,
               "Title": "202611182342077_Inicial.cs",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\202611182342077_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\202611182342077_Inicial.cs",
               "RelativeDocumentMoniker": "EcoRutas.Data\\Migrations\\202611182342077_Inicial.cs",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\202611182342077_Inicial.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\202611182342077_Inicial.cs",
               "RelativeToolTip": "EcoRutas.Data\\Migrations\\202611182342077_Inicial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAO8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-18T23:42:21.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-18T23:42:21.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "EcoRutas.Data\\Migrations\\Configuration.cs",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Data\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "EcoRutas.Data\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-18T23:41:34.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Web.config",
-              "RelativeDocumentMoniker": "EcoRutas.Web\\Web.config",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Web.config",
-              "RelativeToolTip": "EcoRutas.Web\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-11-18T23:36:52.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 29,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "EcoRutas.Web\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\Controllers\\AccountController.cs",
               "RelativeToolTip": "EcoRutas.Web\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAHgAAAAAAAAAAAAmwIkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-18T23:35:42.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-18T23:35:42.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 32,
               "Title": "Startup.Auth.cs",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\Startup.Auth.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\Startup.Auth.cs",
               "RelativeDocumentMoniker": "EcoRutas.Web\\App_Start\\Startup.Auth.cs",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\Startup.Auth.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\Startup.Auth.cs",
               "RelativeToolTip": "EcoRutas.Web\\App_Start\\Startup.Auth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-18T23:35:25.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-18T23:35:25.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "RoleConfig.cs",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\RoleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\RoleConfig.cs",
               "RelativeDocumentMoniker": "EcoRutas.Web\\App_Start\\RoleConfig.cs",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\RoleConfig.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\RoleConfig.cs",
               "RelativeToolTip": "EcoRutas.Web\\App_Start\\RoleConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-18T23:34:47.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-18T23:34:47.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 33,
               "Title": "IdentityConfig.cs",
-              "DocumentMoniker": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\IdentityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\IdentityConfig.cs",
               "RelativeDocumentMoniker": "EcoRutas.Web\\App_Start\\IdentityConfig.cs",
-              "ToolTip": "C:\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\IdentityConfig.cs",
+              "ToolTip": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\Proyecto-Programacion-Avanzada\\EcoRutas\\EcoRutas.Web\\App_Start\\IdentityConfig.cs",
               "RelativeToolTip": "EcoRutas.Web\\App_Start\\IdentityConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-18T23:34:10.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-18T23:34:10.196Z"
             }
           ]
         }
