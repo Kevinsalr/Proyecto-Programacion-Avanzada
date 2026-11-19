@@ -1,0 +1,125 @@
+﻿@model EcoRutas.Service.DTOs.TourCatalogoDetalleDto
+@{
+    ViewBag.Title = Model.Nombre;
+    var esAsociado = User.IsInRole("Asociado");
+}
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <h2 class="mb-1">@Model.Nombre</h2>
+        <span class="badge bg-success">@Model.Categoria</span>
+        <span class="badge bg-light text-dark border">@Model.Dificultad</span>
+    </div>
+    @Html.ActionLink("Volver al catálogo", "Index", null, new { @class = "btn btn-link" })
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-7 mb-3">
+        @if (Model.ImagenIds.Any())
+        {
+            <div id="carruselTour" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    @for (var i = 0; i < Model.ImagenIds.Count; i++)
+                    {
+                        <div class="carousel-item @(i == 0 ? "active" : "")">
+                            <img src="@Url.Action("Imagen", "Tours", new { id = Model.ImagenIds[i] })" class="d-block w-100 imagen-carrusel" alt="@Model.Nombre" />
+                        </div>
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselTour" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselTour" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        }
+    </div>
+    <div class="col-md-5">
+        <p>@Model.Descripcion</p>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Duración:</strong> @Model.DuracionMinutos minutos</li>
+            <li class="list-group-item"><strong>Punto de encuentro:</strong> @Model.PuntoEncuentro</li>
+        </ul>
+    </div>
+</div>
+
+<h4>Próximas salidas</h4>
+
+@if (!Model.Salidas.Any())
+{
+    <div class="alert alert-info">Este tour no tiene salidas próximas por ahora.</div>
+}
+else
+{
+    if (!Request.IsAuthenticated)
+    {
+        <div class="alert alert-light border">
+            Para reservar, @Html.ActionLink("inicie sesión", "Login", "Account", new { returnUrl = Request.RawUrl }, null)
+            o @Html.ActionLink("cree una cuenta", "Register", "Account").
+        </div>
+    }
+    else if (!esAsociado)
+    {
+        <div class="alert alert-light border">Solo los asociados pueden hacer reservas.</div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Fecha y hora</th>
+                    <th>Guía</th>
+                    <th class="text-end">Precio por persona</th>
+                    <th class="text-center">Cupos disponibles</th>
+                    @if (esAsociado)
+                    {
+                        <th class="text-end">Reservar</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var s in Model.Salidas)
+                {
+                    <tr>
+                        <td>@s.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@s.GuiaNombre</td>
+                        <td class="text-end">@s.PrecioXPersona.ToString("N2")</td>
+                        <td class="text-center">
+                            @if (s.CuposDisponibles > 0)
+                            {
+                                @s.CuposDisponibles
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Agotada</span>
+                            }
+                        </td>
+                        @if (esAsociado)
+                        {
+                            <td class="text-end">
+                                @if (s.CuposDisponibles > 0)
+                                {
+                                    using (Html.BeginForm("Agregar", "Carrito", FormMethod.Post, new { @class = "d-inline-flex gap-2 justify-content-end" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="salidaId" value="@s.Id" />
+                                        <select name="cantidad" class="form-select form-select-sm w-auto" aria-label="Pasajeros">
+                                            @for (var n = 1; n <= Math.Min(6, s.CuposDisponibles); n++)
+                                            {
+                                                <option value="@n">@(n == 1 ? "1 pasajero" : n + " pasajeros")</option>
+                                            }
+                                        </select>
+                                        <button type="submit" class="btn btn-sm btn-success text-nowrap">Agregar al carrito</button>
+                                    }
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

@@ -1,0 +1,26 @@
+﻿@model IList<EcoRutas.Service.DTOs.SalidaGuiaDto>
+@{
+    ViewBag.Title = "Mis salidas";
+    var proximas = Model.Where(s => s.FechaHora >= DateTime.Today).ToList();
+    var anteriores = Model.Where(s => s.FechaHora < DateTime.Today).OrderByDescending(s => s.FechaHora).ToList();
+}
+
+<h2>Mis salidas</h2>
+<p class="text-muted">Salidas que tiene asignadas. Desde aquí puede consultar la lista de pasajeros.</p>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Todavía no tiene salidas asignadas.</div>
+}
+
+@if (proximas.Any())
+{
+    <h4 class="mt-4">De hoy en adelante</h4>
+    @Html.Partial("_TablaSalidas", proximas)
+}
+
+@if (anteriores.Any())
+{
+    <h4 class="mt-4">Anteriores</h4>
+    @Html.Partial("_TablaSalidas", anteriores)
+}

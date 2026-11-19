@@ -12,9 +12,26 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* Tarjetas y fotos del catálogo */
+.tarjeta-tour .card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+.imagen-carrusel {
+    height: 380px;
+    object-fit: cover;
+}
+
+/* Portada de la página de inicio */
+.portada {
+    background: linear-gradient(135deg, #2e7d32, #00695c);
+    color: #fff;
+}
+
+/* Al imprimir pases o listas de pasajeros se ocultan el menú, los avisos y los botones */
+@media print {
+    nav, footer, .alert, .no-imprimir {
+        display: none !important;
+    }
 }

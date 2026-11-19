@@ -1,0 +1,97 @@
+﻿@model EcoRutas.Web.Models.CarritoViewModel
+@{
+    ViewBag.Title = "Carrito";
+}
+
+<h2>Carrito</h2>
+<p class="text-muted">Los cupos no se apartan hasta que confirme la reserva.</p>
+
+@if (!Model.Lineas.Any())
+{
+    <div class="alert alert-info">
+        El carrito está vacío. @Html.ActionLink("Ver el catálogo", "Index", "Catalogo")
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Tour y salida</th>
+                    <th class="text-end">Precio por persona</th>
+                    <th class="text-center">Pasajeros</th>
+                    <th class="text-end">Subtotal</th>
+                    <th class="text-end"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var l in Model.Lineas)
+                {
+                    <tr class="@(l.Aviso != null ? "table-warning" : "")">
+                        <td>
+                            <strong>@l.TourNombre</strong><br />
+                            @if (l.Aviso == null || l.TourId > 0)
+                            {
+                                <small class="text-muted">@l.FechaHora.ToString("dd/MM/yyyy HH:mm") · @l.CuposDisponibles cupos disponibles</small>
+                            }
+                            @if (l.Aviso != null)
+                            {
+                                <div class="text-danger small">@l.Aviso</div>
+                            }
+                        </td>
+                        <td class="text-end">@l.PrecioXPersona.ToString("N2")</td>
+                        <td class="text-center">
+                            @using (Html.BeginForm("Actualizar", "Carrito", FormMethod.Post, new { @class = "d-inline-flex gap-1" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="salidaId" value="@l.SalidaId" />
+                                <select name="cantidad" class="form-select form-select-sm w-auto" aria-label="Pasajeros" onchange="this.form.submit()">
+                                    @for (var n = 1; n <= 6; n++)
+                                    {
+                                        <option value="@n" @(n == l.CantidadPasajeros ? "selected" : "")>@n</option>
+                                    }
+                                </select>
+                            }
+                        </td>
+                        <td class="text-end">@l.Subtotal.ToString("N2")</td>
+                        <td class="text-end">
+                            @using (Html.BeginForm("Quitar", "Carrito", FormMethod.Post, new { @class = "d-inline" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="salidaId" value="@l.SalidaId" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Quitar</button>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3" class="text-end">Total</th>
+                    <th class="text-end">@Model.Total.ToString("N2")</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <div>
+            @Html.ActionLink("Seguir explorando", "Index", "Catalogo", null, new { @class = "btn btn-link" })
+            @using (Html.BeginForm("Vaciar", "Carrito", FormMethod.Post, new { @class = "d-inline", onsubmit = "return confirm('¿Vaciar el carrito?');" }))
+            {
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-outline-secondary">Vaciar carrito</button>
+            }
+        </div>
+        @if (Model.PuedeConfirmar)
+        {
+            @Html.ActionLink("Continuar con la reserva", "Confirmar", null, new { @class = "btn btn-success" })
+        }
+        else
+        {
+            <button type="button" class="btn btn-success" disabled>Continuar con la reserva</button>
+        }
+    </div>
+}

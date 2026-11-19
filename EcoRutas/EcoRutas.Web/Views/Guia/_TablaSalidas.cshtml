@@ -1,0 +1,50 @@
+﻿@model IList<EcoRutas.Service.DTOs.SalidaGuiaDto>
+
+<div class="table-responsive">
+    <table class="table table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Fecha y hora</th>
+                <th>Tour</th>
+                <th>Punto de encuentro</th>
+                <th class="text-center">Pasajeros / cupo</th>
+                <th>Estado</th>
+                <th class="text-end"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>
+                        @s.FechaHora.ToString("dd/MM/yyyy HH:mm")
+                        @if (s.FechaHora.Date == DateTime.Today)
+                        {
+                            <span class="badge bg-info text-dark ms-1">Hoy</span>
+                        }
+                    </td>
+                    <td>@s.TourNombre</td>
+                    <td>@s.PuntoEncuentro</td>
+                    <td class="text-center">@s.Pasajeros / @s.CupoMax</td>
+                    <td>
+                        @if (s.ListaCerrada)
+                        {
+                            <span class="badge bg-dark">Lista cerrada</span>
+                        }
+                        else if (s.Activa)
+                        {
+                            <span class="badge bg-success">Activa</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Inactiva</span>
+                        }
+                    </td>
+                    <td class="text-end">
+                        @Html.ActionLink("Ver pasajeros", "Pasajeros", new { id = s.Id }, new { @class = "btn btn-sm btn-outline-primary" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

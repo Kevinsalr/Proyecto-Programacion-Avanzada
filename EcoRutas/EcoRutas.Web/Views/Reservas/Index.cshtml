@@ -1,0 +1,71 @@
+﻿@model IList<EcoRutas.Service.DTOs.ReservaDto>
+@using EcoRutas.Data.Entities
+@using EcoRutas.Web.Models
+@{
+    ViewBag.Title = "Mis reservas";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Mis reservas</h2>
+    @Html.ActionLink("Reservar otro tour", "Index", "Catalogo", null, new { @class = "btn btn-success" })
+</div>
+<p class="text-muted">Puede cancelar una salida hasta 48 horas antes de su fecha.</p>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Todavía no tiene reservas. @Html.ActionLink("Ver el catálogo", "Index", "Catalogo")</div>
+}
+
+@foreach (var r in Model)
+{
+    <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>Reserva #@r.Id</strong> · @r.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</span>
+            <span>
+                Total: <strong>@r.Total.ToString("N2")</strong>
+                @Html.ActionLink("Ver pases", "Detalle", new { id = r.Id }, new { @class = "btn btn-sm btn-outline-primary ms-2" })
+            </span>
+        </div>
+        <div class="table-responsive">
+            <table class="table mb-0 align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Tour</th>
+                        <th>Fecha y hora</th>
+                        <th class="text-center">Pasajeros</th>
+                        <th class="text-end">Subtotal</th>
+                        <th>Estado</th>
+                        <th class="text-end"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var d in r.Detalles)
+                    {
+                        <tr>
+                            <td>@d.TourNombre</td>
+                            <td>@d.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td class="text-center">@d.CantidadPasajeros</td>
+                            <td class="text-end">@d.Subtotal.ToString("N2")</td>
+                            <td><span class="badge @EstadoReserva.Clase(d.Estado)">@EstadoReserva.Texto(d.Estado)</span></td>
+                            <td class="text-end">
+                                @if (d.PuedeCancelar)
+                                {
+                                    using (Html.BeginForm("Cancelar", "Reservas", FormMethod.Post, new { @class = "d-inline", onsubmit = "return confirm('¿Cancelar esta salida? Los pases de sus pasajeros quedarán anulados.');" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="detalleId" value="@d.Id" />
+                                        <button type="submit" class="btn btn-sm btn-outline-danger">Cancelar</button>
+                                    }
+                                }
+                                else if (d.Estado == EstadoDetalle.Confirmada && d.FechaHora > DateTime.Now)
+                                {
+                                    <small class="text-muted">Faltan menos de 48 h: no se puede cancelar</small>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

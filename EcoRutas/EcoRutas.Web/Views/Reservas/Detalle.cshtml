@@ -1,0 +1,61 @@
+﻿@model EcoRutas.Service.DTOs.ReservaDto
+@using EcoRutas.Web.Models
+@{
+    ViewBag.Title = "Reserva #" + Model.Id;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+        <h2 class="mb-0">Reserva #@Model.Id</h2>
+        <span class="text-muted">Hecha el @Model.FechaCreacion.ToString("dd/MM/yyyy HH:mm") · Total @Model.Total.ToString("N2")</span>
+    </div>
+    <div class="no-imprimir">
+        <button type="button" class="btn btn-outline-secondary" onclick="window.print()">Imprimir pases</button>
+        @Html.ActionLink("Mis reservas", "Index", null, new { @class = "btn btn-link" })
+    </div>
+</div>
+
+@foreach (var d in Model.Detalles)
+{
+    <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>
+                <strong>@d.TourNombre</strong> · @d.FechaHora.ToString("dd/MM/yyyy HH:mm")
+                <br /><small class="text-muted">Punto de encuentro: @d.PuntoEncuentro</small>
+            </span>
+            <span class="badge @EstadoReserva.Clase(d.Estado)">@EstadoReserva.Texto(d.Estado)</span>
+        </div>
+        <div class="table-responsive">
+            <table class="table mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Código de pase</th>
+                        <th>Pasajero</th>
+                        <th>Identificación</th>
+                        <th>Estado del pase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in d.Pases)
+                    {
+                        <tr class="@(p.Anulado ? "text-muted" : "")">
+                            <td><code>@p.Codigo</code></td>
+                            <td>@p.NombrePasajero</td>
+                            <td>@p.IdentificacionPasajero</td>
+                            <td>
+                                @if (p.Anulado)
+                                {
+                                    <span class="badge bg-secondary">Anulado</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-success">Vigente</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

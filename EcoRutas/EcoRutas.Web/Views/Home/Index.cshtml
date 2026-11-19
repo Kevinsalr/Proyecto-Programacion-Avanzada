@@ -1,33 +1,53 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IList<EcoRutas.Service.DTOs.TourCatalogoDto>
+@{
+    ViewBag.Title = "Inicio";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+<section class="portada rounded-3 p-5 mb-4">
+    <h1 class="display-5 fw-bold">EcoRutas</h1>
+    <p class="lead mb-4">Tours ecológicos con guías locales: caminatas, canopy, avistamiento de aves y rafting.</p>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+    @Html.ActionLink("Ver catálogo", "Index", "Catalogo", null, new { @class = "btn btn-light btn-lg me-2" })
+
+    @if (User.IsInRole("Asociado"))
+    {
+        @Html.ActionLink("Mis reservas", "Index", "Reservas", null, new { @class = "btn btn-outline-light btn-lg" })
+    }
+    else if (User.IsInRole("Guia"))
+    {
+        @Html.ActionLink("Mis salidas", "Index", "Guia", null, new { @class = "btn btn-outline-light btn-lg" })
+    }
+    else if (User.IsInRole("Administrador"))
+    {
+        @Html.ActionLink("Administrar tours", "Index", "Tours", null, new { @class = "btn btn-outline-light btn-lg" })
+    }
+    else if (!Request.IsAuthenticated)
+    {
+        @Html.ActionLink("Crear cuenta", "Register", "Account", null, new { @class = "btn btn-outline-light btn-lg" })
+    }
+</section>
+
+@if (Model.Any())
+{
+    <h3 class="mb-3">Próximas salidas</h3>
+    <div class="row g-4">
+        @foreach (var t in Model)
+        {
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm tarjeta-tour">
+                    @if (t.ImagenPrincipalId.HasValue)
+                    {
+                        <img src="@Url.Action("Imagen", "Tours", new { id = t.ImagenPrincipalId })" class="card-img-top" alt="@t.Nombre" />
+                    }
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@t.Nombre</h5>
+                        <p class="text-muted small mb-3">
+                            @t.Categoria · Próxima salida: @t.ProximaSalida.Value.ToString("dd/MM/yyyy HH:mm")
+                        </p>
+                        @Html.ActionLink("Ver salidas", "Detalle", "Catalogo", new { id = t.Id }, new { @class = "btn btn-outline-success mt-auto" })
+                    </div>
+                </div>
+            </div>
+        }
     </div>
-</main>
+}

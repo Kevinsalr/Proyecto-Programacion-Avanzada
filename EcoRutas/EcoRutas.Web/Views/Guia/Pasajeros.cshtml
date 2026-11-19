@@ -1,0 +1,54 @@
+﻿@model EcoRutas.Service.DTOs.ListaPasajerosDto
+@{
+    ViewBag.Title = "Pasajeros - " + Model.TourNombre;
+}
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <h2 class="mb-1">@Model.TourNombre</h2>
+        <span class="text-muted">
+            @Model.FechaHora.ToString("dd/MM/yyyy HH:mm") · @Model.PuntoEncuentro
+            · @Model.Pasajeros.Count de @Model.CupoMax pasajeros
+        </span>
+    </div>
+    <div class="no-imprimir">
+        <button type="button" class="btn btn-outline-secondary" onclick="window.print()">Imprimir lista</button>
+        @Html.ActionLink("Mis salidas", "Index", null, new { @class = "btn btn-link" })
+    </div>
+</div>
+
+@if (!Model.Pasajeros.Any())
+{
+    <div class="alert alert-info">Esta salida todavía no tiene pasajeros.</div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>#</th>
+                    <th>Pasajero</th>
+                    <th>Identificación</th>
+                    <th>Código de pase</th>
+                    <th>Reservado por</th>
+                    <th class="text-center">Asistió</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (var i = 0; i < Model.Pasajeros.Count; i++)
+                {
+                    var p = Model.Pasajeros[i];
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>@p.Nombre</td>
+                        <td>@p.Identificacion</td>
+                        <td><code>@p.CodigoPase</code></td>
+                        <td>@p.ReservadoPor</td>
+                        <td class="text-center">@(p.Asistio ? "Sí" : "—")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

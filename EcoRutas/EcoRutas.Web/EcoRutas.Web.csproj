@@ -160,7 +160,11 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CarritoController.cs" />
+    <Compile Include="Controllers\CatalogoController.cs" />
+    <Compile Include="Controllers\GuiaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservasController.cs" />
     <Compile Include="Controllers\SalidasController.cs" />
     <Compile Include="Controllers\ToursController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
@@ -168,6 +172,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CarritoViewModels.cs" />
+    <Compile Include="Models\CatalogoViewModels.cs" />
+    <Compile Include="Models\ReservaViewModels.cs" />
     <Compile Include="Models\SalidaViewModels.cs" />
     <Compile Include="Models\TourViewModels.cs" />
     <Compile Include="Models\UsuarioViewModels.cs" />
@@ -240,6 +247,15 @@
     <Content Include="Views\Usuarios\_UsuarioCampos.cshtml" />
     <Content Include="Views\Usuarios\Create.cshtml" />
     <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Catalogo\Index.cshtml" />
+    <Content Include="Views\Catalogo\Detalle.cshtml" />
+    <Content Include="Views\Carrito\Index.cshtml" />
+    <Content Include="Views\Carrito\Confirmar.cshtml" />
+    <Content Include="Views\Reservas\Index.cshtml" />
+    <Content Include="Views\Reservas\Detalle.cshtml" />
+    <Content Include="Views\Guia\Index.cshtml" />
+    <Content Include="Views\Guia\_TablaSalidas.cshtml" />
+    <Content Include="Views\Guia\Pasajeros.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

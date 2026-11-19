@@ -14,12 +14,16 @@ namespace EcoRutas.Service.Implementaciones
             Tours = new TourService(uow);
             Salidas = new SalidaService(uow);
             Reservas = new ReservaService(uow);
+            Catalogo = new CatalogoService(uow);
+            Guia = new GuiaService(uow);
             Usuarios = new UsuarioService(uow, userManager);
         }
 
         public ITourService Tours { get; }
         public ISalidaService Salidas { get; }
         public IReservaService Reservas { get; }
+        public ICatalogoService Catalogo { get; }
+        public IGuiaService Guia { get; }
         public IUsuarioService Usuarios { get; }
     }
 }

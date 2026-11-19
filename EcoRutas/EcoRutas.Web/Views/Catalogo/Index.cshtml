@@ -1,0 +1,79 @@
+﻿@model EcoRutas.Web.Models.CatalogoIndexViewModel
+@using EcoRutas.Web.Models
+@{
+    ViewBag.Title = "Catálogo de tours";
+}
+
+<h2>Catálogo de tours</h2>
+<p class="text-muted">Elija un tour para ver sus próximas salidas.</p>
+
+@using (Html.BeginForm("Index", "Catalogo", FormMethod.Get, new { @class = "row g-2 mb-4" }))
+{
+    <div class="col-md-5">
+        @Html.TextBoxFor(m => m.Busqueda, new { @class = "form-control", placeholder = "Buscar por nombre o descripción" })
+    </div>
+    <div class="col-md-2">
+        <select name="categoria" class="form-select">
+            <option value="">Todas las categorías</option>
+            @foreach (var c in TourFormViewModel.Categorias)
+            {
+                <option value="@c" @(Model.Categoria == c ? "selected" : "")>@c</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-2">
+        <select name="dificultad" class="form-select">
+            <option value="">Cualquier dificultad</option>
+            @foreach (var d in TourFormViewModel.Dificultades)
+            {
+                <option value="@d" @(Model.Dificultad == d ? "selected" : "")>@d</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-3">
+        <button type="submit" class="btn btn-outline-dark">Filtrar</button>
+        @Html.ActionLink("Limpiar", "Index", null, new { @class = "btn btn-link" })
+    </div>
+}
+
+@if (!Model.Tours.Any())
+{
+    <div class="alert alert-info">No hay tours que coincidan con la búsqueda.</div>
+}
+else
+{
+    <div class="row g-4">
+        @foreach (var t in Model.Tours)
+        {
+            <div class="col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm tarjeta-tour">
+                    @if (t.ImagenPrincipalId.HasValue)
+                    {
+                        <img src="@Url.Action("Imagen", "Tours", new { id = t.ImagenPrincipalId })" class="card-img-top" alt="@t.Nombre" />
+                    }
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@t.Nombre</h5>
+                        <div class="mb-2">
+                            <span class="badge bg-success">@t.Categoria</span>
+                            <span class="badge bg-light text-dark border">@t.Dificultad</span>
+                            <span class="badge bg-light text-dark border">@t.DuracionMinutos min</span>
+                        </div>
+                        @if (t.PrecioDesde.HasValue)
+                        {
+                            <p class="mb-1">Desde <strong>@t.PrecioDesde.Value.ToString("N2")</strong> por persona</p>
+                            <p class="text-muted small mb-3">
+                                Próxima salida: @t.ProximaSalida.Value.ToString("dd/MM/yyyy HH:mm")
+                                · @t.SalidasDisponibles salida(s) con cupo
+                            </p>
+                        }
+                        else
+                        {
+                            <p class="text-muted mb-3">Sin salidas próximas por ahora.</p>
+                        }
+                        @Html.ActionLink("Ver salidas", "Detalle", new { id = t.Id }, new { @class = "btn btn-outline-success mt-auto" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

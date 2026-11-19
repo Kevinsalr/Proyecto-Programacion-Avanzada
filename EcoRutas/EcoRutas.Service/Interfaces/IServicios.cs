@@ -27,6 +27,19 @@ namespace EcoRutas.Service.Interfaces
         IList<GuiaDto> ListarGuias();
     }
 
+    public interface ICatalogoService
+    {
+        IList<TourCatalogoDto> ListarTours(string busqueda, string categoria, string dificultad);
+        TourCatalogoDetalleDto ObtenerTour(int id);
+        IList<SalidaCarritoDto> ObtenerSalidasParaCarrito(IEnumerable<int> salidaIds);
+    }
+
+    public interface IGuiaService
+    {
+        IList<SalidaGuiaDto> ListarSalidas(string guiaId);
+        ListaPasajerosDto ObtenerPasajeros(int salidaId, string guiaId);
+    }
+
     public interface IReservaService
     {
         IList<ReservaDto> ListarPorAsociado(string asociadoId);
