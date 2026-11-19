@@ -96,6 +96,34 @@ namespace EcoRutas.Repository.Implementaciones
         }
     }
 
+    public class ReservaRepositorio : Repositorio<Reserva>, IReservaRepositorio
+    {
+        public ReservaRepositorio(EcoRutasContext contexto) : base(contexto) { }
+
+        // Trae cada reserva con sus detalles, la salida y el tour de cada detalle, y los pases.
+        public IQueryable<Reserva> ConsultarConDetalles()
+        {
+            return Contexto.Reservas
+                .Include(r => r.Detalles.Select(d => d.Salida.Tour))
+                .Include(r => r.Detalles.Select(d => d.Pases));
+        }
+    }
+
+    public class DetalleReservaRepositorio : Repositorio<DetalleReserva>, IDetalleReservaRepositorio
+    {
+        public DetalleReservaRepositorio(EcoRutasContext contexto) : base(contexto) { }
+    }
+
+    public class PaseRepositorio : Repositorio<Pase>, IPaseRepositorio
+    {
+        public PaseRepositorio(EcoRutasContext contexto) : base(contexto) { }
+
+        public bool ExisteCodigo(string codigo)
+        {
+            return Contexto.Pases.Any(p => p.Codigo == codigo);
+        }
+    }
+
     public class UsuarioRepositorio : IUsuarioRepositorio
     {
         private readonly EcoRutasContext _contexto;
@@ -159,17 +187,42 @@ namespace EcoRutas.Repository.Implementaciones
             Tours = new TourRepositorio(contexto);
             Salidas = new SalidaRepositorio(contexto);
             Imagenes = new ImagenRepositorio(contexto);
+            Reservas = new ReservaRepositorio(contexto);
+            DetallesReserva = new DetalleReservaRepositorio(contexto);
+            Pases = new PaseRepositorio(contexto);
             Usuarios = new UsuarioRepositorio(contexto);
         }
 
         public ITourRepositorio Tours { get; }
         public ISalidaRepositorio Salidas { get; }
         public IImagenRepositorio Imagenes { get; }
+        public IReservaRepositorio Reservas { get; }
+        public IDetalleReservaRepositorio DetallesReserva { get; }
+        public IPaseRepositorio Pases { get; }
         public IUsuarioRepositorio Usuarios { get; }
 
         public int Guardar()
         {
             return _contexto.SaveChanges();
+        }
+
+        // Deja el contexto igual que la base de datos: quita lo agregado y recarga lo modificado
+        // (así las salidas traen sus cupos y VersionFila actuales antes de reintentar).
+        public void DescartarCambios()
+        {
+            foreach (var entrada in _contexto.ChangeTracker.Entries().ToList())
+            {
+                switch (entrada.State)
+                {
+                    case EntityState.Added:
+                        entrada.State = EntityState.Detached;
+                        break;
+                    case EntityState.Modified:
+                    case EntityState.Deleted:
+                        entrada.Reload();
+                        break;
+                }
+            }
         }
     }
 }

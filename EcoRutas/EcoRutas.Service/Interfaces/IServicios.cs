@@ -27,6 +27,14 @@ namespace EcoRutas.Service.Interfaces
         IList<GuiaDto> ListarGuias();
     }
 
+    public interface IReservaService
+    {
+        IList<ReservaDto> ListarPorAsociado(string asociadoId);
+        ReservaDto ObtenerDeAsociado(int reservaId, string asociadoId);
+        int Reservar(string asociadoId, IList<ReservaLineaDto> lineas);   // devuelve el ReservaId
+        void CancelarDetalle(int detalleId, string asociadoId);
+    }
+
     public interface IUsuarioService
     {
         IList<UsuarioListadoDto> Listar(string busqueda, string rol, bool? activo);

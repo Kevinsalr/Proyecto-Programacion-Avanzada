@@ -13,11 +13,13 @@ namespace EcoRutas.Service.Implementaciones
             var uow = new UnitOfWork(contexto);
             Tours = new TourService(uow);
             Salidas = new SalidaService(uow);
+            Reservas = new ReservaService(uow);
             Usuarios = new UsuarioService(uow, userManager);
         }
 
         public ITourService Tours { get; }
         public ISalidaService Salidas { get; }
+        public IReservaService Reservas { get; }
         public IUsuarioService Usuarios { get; }
     }
 }

@@ -57,9 +57,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\ReservaDtos.cs" />
     <Compile Include="DTOs\UsuarioDtos.cs" />
     <Compile Include="Exceptions\CatalogoDtos.cs" />
     <Compile Include="Exceptions\ExcepcionesNegocio.cs" />
+    <Compile Include="Implementaciones\ReservaService.cs" />
     <Compile Include="Implementaciones\SalidaService.cs" />
     <Compile Include="Implementaciones\ServiceFactory.cs" />
     <Compile Include="Implementaciones\TourService.cs" />

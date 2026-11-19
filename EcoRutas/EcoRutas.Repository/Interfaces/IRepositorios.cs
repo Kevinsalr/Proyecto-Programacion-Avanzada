@@ -32,6 +32,20 @@ namespace EcoRutas.Repository.Interfaces
         int SiguienteOrden(int tourId);
     }
 
+    public interface IReservaRepositorio : IRepositorio<Reserva>
+    {
+        IQueryable<Reserva> ConsultarConDetalles();   // incluye detalles, salida, tour y pases
+    }
+
+    public interface IDetalleReservaRepositorio : IRepositorio<DetalleReserva>
+    {
+    }
+
+    public interface IPaseRepositorio : IRepositorio<Pase>
+    {
+        bool ExisteCodigo(string codigo);
+    }
+
     public interface IUsuarioRepositorio
     {
         ApplicationUser ObtenerPorId(string id);
@@ -48,8 +62,12 @@ namespace EcoRutas.Repository.Interfaces
         ITourRepositorio Tours { get; }
         ISalidaRepositorio Salidas { get; }
         IImagenRepositorio Imagenes { get; }
+        IReservaRepositorio Reservas { get; }
+        IDetalleReservaRepositorio DetallesReserva { get; }
+        IPaseRepositorio Pases { get; }
         IUsuarioRepositorio Usuarios { get; }
 
         int Guardar();
+        void DescartarCambios();   // para reintentar después de un conflicto de concurrencia
     }
 }
