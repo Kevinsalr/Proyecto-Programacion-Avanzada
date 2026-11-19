@@ -1,0 +1,32 @@
+﻿@model EcoRutas.Web.Models.UsuarioFormViewModel
+
+@Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+<div class="row g-3">
+    <div class="col-md-8">
+        @Html.LabelFor(m => m.NombreCompleto, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.NombreCompleto, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.NombreCompleto, "", new { @class = "text-danger" })
+    </div>
+    <div class="col-md-4">
+        @Html.LabelFor(m => m.Rol, new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.Rol,
+            new SelectList(EcoRutas.Web.Models.UsuarioFormViewModel.Roles, "Key", "Value", Model.Rol),
+            "-- Seleccione --", new { @class = "form-select" })
+        @Html.ValidationMessageFor(m => m.Rol, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="col-12">
+        @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", type = "email" })
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        <div class="form-text">El correo también es el usuario para iniciar sesión.</div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-check">
+            @Html.CheckBoxFor(m => m.Activo, new { @class = "form-check-input" })
+            @Html.LabelFor(m => m.Activo, new { @class = "form-check-label" })
+        </div>
+    </div>
+</div>

@@ -17,8 +17,10 @@ namespace EcoRutas.Web.Controllers
             {
                 if (_servicios == null)
                 {
-                    var contexto = HttpContext.GetOwinContext().Get<EcoRutasContext>();
-                    _servicios = new ServiceFactory(contexto);
+                    var owin = HttpContext.GetOwinContext();
+                    var contexto = owin.Get<EcoRutasContext>();
+                    var userManager = owin.GetUserManager<ApplicationUserManager>();
+                    _servicios = new ServiceFactory(contexto, userManager);
                 }
                 return _servicios;
             }

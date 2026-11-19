@@ -1,0 +1,37 @@
+﻿@model EcoRutas.Web.Models.UsuarioCrearViewModel
+@{
+    ViewBag.Title = "Nuevo usuario";
+}
+
+<h2>Nuevo usuario</h2>
+<p class="text-muted">El código de usuario se genera automáticamente.</p>
+
+@using (Html.BeginForm("Create", "Usuarios", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.Partial("_UsuarioCampos", Model)
+
+    <div class="row g-3 mt-1">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            <div class="form-text">Mínimo 8 caracteres, con mayúscula, minúscula, número y un símbolo.</div>
+        </div>
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "form-label" })
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <button type="submit" class="btn btn-success">Guardar usuario</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-link" })
+    </div>
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

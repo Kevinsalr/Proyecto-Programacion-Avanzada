@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using EcoRutas.Data.Entities;
 
@@ -34,7 +35,12 @@ namespace EcoRutas.Repository.Interfaces
     public interface IUsuarioRepositorio
     {
         ApplicationUser ObtenerPorId(string id);
+        IQueryable<ApplicationUser> Consultar();
         IQueryable<ApplicationUser> ConsultarPorRol(string rol);
+        IDictionary<string, string> ObtenerNombresRoles();   // RoleId -> nombre del rol
+        bool ExisteCodigo(string codigo);
+        bool TieneSalidasFuturas(string guiaId);
+        bool TieneDependencias(string usuarioId);
     }
 
     public interface IUnitOfWork

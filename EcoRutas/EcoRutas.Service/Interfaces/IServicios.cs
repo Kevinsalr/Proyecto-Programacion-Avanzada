@@ -26,4 +26,14 @@ namespace EcoRutas.Service.Interfaces
         int Eliminar(int salidaId);                // devuelve el TourId
         IList<GuiaDto> ListarGuias();
     }
+
+    public interface IUsuarioService
+    {
+        IList<UsuarioListadoDto> Listar(string busqueda, string rol, bool? activo);
+        UsuarioGuardarDto ObtenerParaEditar(string id);
+        string Crear(UsuarioGuardarDto dto, string password);
+        void Editar(UsuarioGuardarDto dto, string usuarioActualId);
+        void CambiarEstado(string id, bool activo, string usuarioActualId);
+        void Eliminar(string id, string usuarioActualId);
+    }
 }

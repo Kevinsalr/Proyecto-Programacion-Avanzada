@@ -1,4 +1,6 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using EcoRutas.Data.Context;
 using EcoRutas.Data.Entities;
@@ -108,6 +110,11 @@ namespace EcoRutas.Repository.Implementaciones
             return _contexto.Users.FirstOrDefault(u => u.Id == id);
         }
 
+        public IQueryable<ApplicationUser> Consultar()
+        {
+            return _contexto.Users;
+        }
+
         public IQueryable<ApplicationUser> ConsultarPorRol(string rol)
         {
             var rolId = _contexto.Roles
@@ -116,6 +123,29 @@ namespace EcoRutas.Repository.Implementaciones
                 .FirstOrDefault();
 
             return _contexto.Users.Where(u => u.Roles.Any(r => r.RoleId == rolId));
+        }
+
+        public IDictionary<string, string> ObtenerNombresRoles()
+        {
+            return _contexto.Roles.ToDictionary(r => r.Id, r => r.Name);
+        }
+
+        public bool ExisteCodigo(string codigo)
+        {
+            return _contexto.Users.Any(u => u.CodigoUsuario == codigo);
+        }
+
+        public bool TieneSalidasFuturas(string guiaId)
+        {
+            var ahora = DateTime.Now;
+            return _contexto.Salidas.Any(s => s.GuiaId == guiaId && s.FechaHora > ahora);
+        }
+
+        public bool TieneDependencias(string usuarioId)
+        {
+            return _contexto.Salidas.Any(s => s.GuiaId == usuarioId)
+                || _contexto.Reservas.Any(r => r.AsociadoId == usuarioId)
+                || _contexto.Resenas.Any(r => r.AsociadoId == usuarioId);
         }
     }
 
